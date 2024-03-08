@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+.container{
+    border: 2px solid ;
+    width: 90%;
+    height: 65vh;
+    background-color: rgb(132, 167, 167);
+    margin: auto;
+
+}
+.lightbulb{
+    position: absolute;
+    border-radius:50%;
+    border: 1px solid;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    left: 10%;
+    top: 5%;
+
+}
+
+.lightbulb img{
+    position: absolute;
+    margin: auto;
+    top: 0%;
+    width: 100%;
+    display: none;
+    animation: blink 1s ease-in-out 0s ; 
+    
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.10;
+    }
+
+}
+
+.rumb{
+    position: absolute;
+    margin: auto;
+    border-radius: 50% 50% 0% 0%;
+    border: 1px solid;
+    border-left:7px solid  rgba(24, 24, 24, 0.63);
+    border-top:7px solid rgb(68, 69, 67);
+    border-bottom-width:3px;
+    display: inline-block;
+    top: 90%;
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    background-color: rgb(73, 74, 67);
+
+}
+
+
+
+.connector{
+    position: absolute;
+    width: 58.5%;
+    height: 227px;
+    margin: auto;
+
+    bottom: 40%;
+    left: 20%;
+
+    border-bottom: 5px dotted;
+    border-right: 5px dotted;
+    border-left:5px dotted ;
+    animation: lights 0.5s ease-in-out;
+
+}
+@keyframes lights {
+    20%{
+        border-color: yellow ;
+    }
+    40%{
+        
+        opacity: 0.2;
+    }
+    60%{
+       
+        opacity: 0.1;
+    }
+    100%{
+        border-color:yellow ;
+    }
+}
+
+
+
+
+.lightSwitch{
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid;
+    height: 100px;
+    width: 50px;
+    right: 20%;
+    top:15%
+}
+
+.lightSwitch span{
+    font-size: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: auto;
+  
+}
+.lightSwitch #onbtn{
+    padding-bottom: 20%;
+    border-bottom:1px solid ;
+    
+}
+
+ #onbtn:hover{
+    background-color: rgb(223, 214, 214);
+}
